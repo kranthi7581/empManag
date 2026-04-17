@@ -34,6 +34,13 @@
             transition-all duration-200 text-sm placeholder:text-slate-400;
   }
 
+  /* Hide browser native password reveal button */
+  input[type="password"]::-ms-reveal,
+  input[type="password"]::-ms-clear,
+  input[type="password"]::-webkit-textfield-decoration-container {
+    display: none !important;
+  }
+
   /* Table styles */
   .table-modern {
     @apply w-full text-left text-sm;
